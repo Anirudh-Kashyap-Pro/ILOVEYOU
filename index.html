@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquid Love • Aesthetic Heart Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-obsidian">
+  <!-- Dynamic Ambient Liquid Background Canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Glowing Liquid Light Orbs for Glass Refraction -->
+  <div class="light-orb orb-1"></div>
+  <div class="light-orb orb-2"></div>
+  <div class="light-orb orb-3"></div>
+  <div class="light-orb orb-4"></div>
+
+  <!-- Noise Overlay for realistic frosted glass depth -->
+  <div class="grain-overlay"></div>
+
+  <!-- MAIN WRAPPER -->
+  <div id="app-container">
+
+    <!-- ============================================== -->
+    <!-- VIEW 1: LANDING PAGE (ONE BUTTON IN THE MIDDLE) -->
+    <!-- ============================================== -->
+    <main id="landing-view" class="view active">
+      <div class="landing-content">
+        <!-- Floating Glass Tag -->
+        <div class="glass-badge fade-in-down">
+          <span class="badge-sparkle">✦</span>
+          <span class="badge-text">Liquid Glass Love Experience</span>
+          <span class="badge-sparkle">✦</span>
+        </div>
+
+        <h1 class="landing-title text-shimmer">
+          The Geometry of Love
+        </h1>
+
+        <p class="landing-subtitle">
+          An aesthetic journey woven from multilingual affirmations, mathematical curves, and radiant liquid glass.
+        </p>
+
+        <!-- THE CENTRAL LIQUID GLASS BUTTON -->
+        <div class="center-button-wrapper">
+          <div class="pulse-ring ring-1"></div>
+          <div class="pulse-ring ring-2"></div>
+          <div class="pulse-ring ring-3"></div>
+
+          <button id="enter-heart-btn" class="liquid-glass-btn" aria-label="Enter the Love Heart">
+            <span class="btn-glow-aura"></span>
+            <span class="btn-refraction-sheen"></span>
+            <span class="btn-content">
+              <span class="heart-pulse-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </span>
+              <span class="btn-label">Open Heart</span>
+              <span class="btn-subtext">Click to reveal animation</span>
+            </span>
+            <span class="btn-specular-edge"></span>
+          </button>
+        </div>
+
+        <!-- Secondary liquid pill for direct python file exploration -->
+        <div class="landing-footer-actions">
+          <button id="view-script-btn-landing" class="glass-pill-btn">
+            <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <span>Uploaded Script: <code class="highlight-code">heart_animation.py</code></span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ============================================== -->
+    <!-- VIEW 2: HERO PAGE (HUGE ANIMATION HEART)        -->
+    <!-- ============================================== -->
+    <section id="hero-view" class="view">
+      <!-- Liquid Glass Top Navigation Bar -->
+      <header class="glass-nav">
+        <div class="nav-left">
+          <button id="back-to-landing-btn" class="glass-icon-btn" title="Back to entrance">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span class="btn-text-hide-mobile">Entrance</span>
+          </button>
+
+          <div class="nav-brand">
+            <span class="brand-heart-icon">❤️</span>
+            <div class="brand-text">
+              <span class="brand-title">Sacred Heart</span>
+              <span class="brand-meta" id="status-counter">127 Phrases • 20 Languages</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-right">
+          <!-- Sound Toggle -->
+          <button id="audio-toggle-btn" class="glass-icon-btn" title="Toggle Romantic Ambient Sound">
+            <span class="sound-icon-active" id="sound-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </span>
+            <span class="sound-text">Ambient Sound</span>
+          </button>
+
+          <!-- Replay Button -->
+          <button id="replay-btn" class="glass-icon-btn" title="Replay Animation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="1 4 1 10 7 10"></polyline>
+              <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+            </svg>
+            <span class="btn-text-hide-mobile">Replay</span>
+          </button>
+
+          <!-- View Uploaded Python Script -->
+          <button id="open-code-modal-btn" class="glass-icon-btn glass-accent-btn" title="Open Uploaded Python Script">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            <span>Python Source</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- HERO HEART ANIMATION CANVAS CONTAINER -->
+      <div class="hero-stage">
+        <!-- Interactive Canvas for the Heart Animation -->
+        <canvas id="heart-canvas"></canvas>
+
+        <!-- Dynamic Overlay / Cursor Glow -->
+        <div id="cursor-glow" class="cursor-glow-element"></div>
+
+        <!-- Live Floating Status Pill during entrance -->
+        <div id="animation-status-badge" class="glass-status-badge">
+          <span class="status-dot pulsing"></span>
+          <span id="status-text">Weaving multilingual affirmations...</span>
+        </div>
+      </div>
+
+      <!-- FLOATING LIQUID GLASS CONTROL DOCK -->
+      <footer class="glass-dock">
+        <div class="dock-inner">
+          <button id="dock-replay-btn" class="dock-btn" title="Restart Heart Animation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+            <span>Replay</span>
+          </button>
+
+          <div class="dock-divider"></div>
+
+          <!-- Speed Modes -->
+          <div class="dock-speed-group" title="Animation Speed">
+            <button class="dock-speed-btn" data-speed="2.0">0.5x</button>
+            <button class="dock-speed-btn active" data-speed="1.0">1x</button>
+            <button class="dock-speed-btn" data-speed="0.5">2x</button>
+          </div>
+
+          <div class="dock-divider"></div>
+
+          <!-- Particle Shower Toggle -->
+          <button id="dock-particles-btn" class="dock-btn active" title="Toggle Floating Love Petals & Embers">
+            <span class="petal-icon">🌸</span>
+            <span>Petals</span>
+          </button>
+
+          <!-- Shimmer Boost Toggle -->
+          <button id="dock-shimmer-btn" class="dock-btn active" title="Toggle Shimmering Sparkles">
+            <span class="sparkle-icon">✨</span>
+            <span>Shimmer</span>
+          </button>
+
+          <div class="dock-divider"></div>
+
+          <!-- Native Python Launcher Button -->
+          <button id="dock-run-native-btn" class="dock-btn dock-btn-highlight" title="Launch the uploaded Python Tkinter window">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Launch .py Window</span>
+          </button>
+        </div>
+      </footer>
+    </section>
+
+  </div>
+
+  <!-- ============================================== -->
+  <!-- LIQUID GLASS MODAL: UPLOADED PYTHON SCRIPT     -->
+  <!-- ============================================== -->
+  <div id="code-modal" class="glass-modal-backdrop" aria-hidden="true">
+    <div class="glass-modal-card">
+      <div class="modal-specular-highlight"></div>
+      
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-badge">
+            <span class="badge-icon">🐍</span>
+            <span>Uploaded Script</span>
+          </div>
+          <h2 class="modal-title">heart_animation.py</h2>
+        </div>
+        <button id="close-modal-btn" class="glass-close-btn" aria-label="Close modal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-meta-bar">
+        <div class="meta-item">
+          <span class="meta-label">Original Engine:</span>
+          <span class="meta-val">Python 3 (turtle & tkinter.font)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Equations:</span>
+          <span class="meta-val">16 sin³(a) / 13 cos(a) - 5 cos(2a)...</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Phrases:</span>
+          <span class="meta-val">20 World Languages</span>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="code-container">
+          <div class="code-action-floating">
+            <button id="copy-code-btn" class="glass-code-action-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-code-text">Copy Code</span>
+            </button>
+            <a id="download-code-btn" class="glass-code-action-btn" href="heart_animation.py" download="heart_animation.py">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download .py</span>
+            </a>
+          </div>
+          <pre><code id="python-code-content" class="language-python"># Loading uploaded Python script...</code></pre>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div class="modal-footer-notice">
+          <span>Tip: You can execute this script locally in Windows terminal via <code>py heart_animation.py</code></span>
+        </div>
+        <div class="modal-footer-actions">
+          <button id="modal-run-python-btn" class="glass-action-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span>Run in Native Tkinter Window</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="glass-toast">
+    <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- JavaScript Application Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
